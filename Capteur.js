@@ -29,7 +29,6 @@ app.get("/api/mesures", async (req, res) => {
     .collection("measurements")
     .find({})
     .sort({ timestamp: -1 })
-    .limit(20)
     .toArray();
   res.json(mesures);
 });
@@ -44,7 +43,6 @@ app.get("/api/capteurs/count", async (req, res) => {
 app.delete("/api/capteurs/dernier-lot", async (req, res) => {
   try {
     const db = await connectDb();
-
     // On trie les capteurs par ordre décroissant (les plus récents d'abord)
     const derniersCapteurs = await db
       .collection("sensors")
