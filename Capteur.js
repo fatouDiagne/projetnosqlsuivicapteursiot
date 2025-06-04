@@ -6,7 +6,7 @@ const app = express();
 app.use(cors());
 
 const uri =
-  "mongodb+srv://aghaukengprincesse7:Mongo123@samrtsensoecluster.vnskr6q.mongodb.net/Smart_sensor?retryWrites=true&w=majority";
+  "";
 const client = new MongoClient(uri);
 
 // Connexion à MongoDB
