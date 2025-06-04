@@ -1,6 +1,6 @@
 const { MongoClient } = require('mongodb');
 const { MONGODB_URI, DB_OPTIONS } = require('./dbconfig'); // Même import
-const uri = "mongodb+srv://aghaukengprincesse7:Mongo123@samrtsensoecluster.vnskr6q.mongodb.net/Smart_sensor?retryWrites=true&w=majority";
+const uri = "";
 
 // Configuration des capteurs
 const SITES = ['Usine Nord', 'Usine Sud', 'Usine Est'];
